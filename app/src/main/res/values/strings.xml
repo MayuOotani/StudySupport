@@ -49,4 +49,7 @@
     <string name="make_timers_msg">aaaa</string>
     <string name="toast_failed20">20文字未満で入力してください</string>
     <string name="toast_failed1">1文字以上で入力してください</string>
+    <string name="ToDoHint">・作成ボタンをタッチすると作成画面に遷移します。入力できる文字数は２０文字までです\n\n\n
+    ・完了ボタンをタッチするとタスクが消去されます\n\n\n
+    ・タスクの枠内をタッチするとそのタスクの編集画面に遷移します</string>
 </resources>

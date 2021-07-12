@@ -22,4 +22,7 @@
     <style name="NumPick">
         <item name="android:textSize">50sp</item>
     </style>
+    <style name="Theme.StudySupport.popMe">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

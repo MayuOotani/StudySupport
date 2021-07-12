@@ -1,4 +1,3 @@
-package com.example.studysupport;
 //ToDo_Input　入力画面から入力を受け取り渡す　処理部へ?管理部へ?タスク入力
 
 /****************************************************
@@ -11,9 +10,10 @@ package com.example.studysupport;
  ***************************************************/
 /*
  *** Revision    :
- *** V1.0        :   馬場　章　2021.07.3
+ *** V1.0        :   馬場　章　2021.07.3  作成
+ *** V2.0        :   馬場　章　2021.07.12　ヘルプボタンの消去
  */
-
+package com.example.studysupport;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -43,6 +43,7 @@ public class ToDo_Input extends AppCompatActivity {
     EditText simekiri; //日付ダイアログのEditText
     InputMethodManager inputMethodManager; // キーボートの有無や背景タッチを可能にするため
     private LinearLayout mainLayout;       //のもの
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,7 +121,7 @@ public class ToDo_Input extends AppCompatActivity {
 
     }
 
-
+    //背景タッチ関係
     public boolean onTouchEvent(MotionEvent event) {
 
 // キーボードを隠す
@@ -131,11 +132,12 @@ public class ToDo_Input extends AppCompatActivity {
 
         return true;
     }
+}
 
-
+/*
     public void onTapEvent(View view) { //(View)ビュー
         DialogFragment dialogFragment = new popup();
         //　ダイアログをだす
         dialogFragment.show(getSupportFragmentManager(), "popup");
     }
-}
+}*/
