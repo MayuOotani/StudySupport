@@ -60,7 +60,7 @@ public class calendarUI extends AppCompatActivity {
         setContentView(R.layout.activity_calendar);
         CalendarView cal = findViewById(R.id.Calendar);
         BottomNavigationView menu = findViewById(R.id.bnv);
-        menu.getMenu().findItem(R.id.Calendar).setChecked(true);
+        menu.getMenu().findItem(R.id.frmCal).setChecked(true);
 
         //今日のデータの表示
         String txt; //出力内容
@@ -160,24 +160,24 @@ public class calendarUI extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()) {
-                    case R.id.Main:
+                    case R.id.frmMain:
                         intent = new Intent(calendarUI.this, MainActivity.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Timer:
+                    case R.id.frmTimer:
                         intent = new Intent(calendarUI.this, MainTimerFrame.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Study:
+                    case R.id.frmGaku:
                         intent = new Intent(calendarUI.this, StudyRecord_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Calendar:
+                    case R.id.frmCal:
                         return true;
-                    case R.id.ToDo:
+                    case R.id.frmToDo:
                         intent = new Intent(calendarUI.this, ToDo_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

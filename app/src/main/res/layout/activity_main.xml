@@ -49,22 +49,20 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toEndOf="@+id/Comment" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonHelp"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:background="@drawable/circle_button"
+        android:background="@null"
         android:onClick="onTapEvent"
-        android:text="？"
-        android:textSize="13sp"
-        app:backgroundTint="#FFEB3B"
         app:layout_constraintBottom_toTopOf="@+id/textNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pieChart"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/ic_baseline_help_24" />
 
     <TextView
         android:id="@+id/textNext"

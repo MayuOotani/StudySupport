@@ -59,7 +59,7 @@ public class ToDo_UI extends
         setContentView(R.layout.activity_todo);
         //  Button, BottomNavigationViewの設定
         BottomNavigationView menu = findViewById(R.id.bnv);
-        menu.getMenu().findItem(R.id.ToDo).setChecked(true);
+        menu.getMenu().findItem(R.id.frmToDo).setChecked(true);
         btn = (Button) findViewById(R.id.buttonHelp);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,27 +76,27 @@ public class ToDo_UI extends
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()) {
-                    case R.id.Main:
+                    case R.id.frmMain:
                         intent = new Intent(ToDo_UI.this, MainActivity.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Timer:
+                    case R.id.frmTimer:
                         intent = new Intent(ToDo_UI.this, MainTimerFrame.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Study:
+                    case R.id.frmGaku:
                         intent = new Intent(ToDo_UI.this, StudyRecord_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Calendar:
+                    case R.id.frmCal:
                         intent = new Intent(ToDo_UI.this, calendarUI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.ToDo:
+                    case R.id.frmToDo:
                         return true;
                 }
                 return false;

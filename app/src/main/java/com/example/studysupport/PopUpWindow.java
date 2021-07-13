@@ -35,7 +35,7 @@ public class PopUpWindow extends AppCompatActivity {
         int width = dm.widthPixels;
         int hight = dm.heightPixels;
 
-        getWindow().setLayout((int)(width*.7),(int)(hight*.5));
+        getWindow().setLayout((int)(width*.9),(int)(hight*.7));
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;

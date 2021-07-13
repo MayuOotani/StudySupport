@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 });
         //宣言
         BottomNavigationView menu = findViewById(R.id.bnv);
-        menu.getMenu().findItem(R.id.Main).setChecked(true);
+        menu.getMenu().findItem(R.id.frmMain).setChecked(true);
 
 
         //画面遷移
@@ -148,24 +148,24 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()) {
-                    case R.id.Main:
+                    case R.id.frmMain:
                         return true;
-                    case R.id.Timer:
+                    case R.id.frmTimer:
                         intent = new Intent(MainActivity.this, MainTimerFrame.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Study:
+                    case R.id.frmGaku:
                         intent = new Intent(MainActivity.this, StudyRecord_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Calendar:
+                    case R.id.frmCal:
                         intent = new Intent(MainActivity.this, calendarUI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.ToDo:
+                    case R.id.frmToDo:
                         intent = new Intent(MainActivity.this, ToDo_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

@@ -3,28 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/Main"
+        android:id="@+id/frmMain"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Main" />
 
     <item
-        android:id="@+id/Timer"
+        android:id="@+id/frmTimer"
         android:icon="@drawable/ic_baseline_timer_24"
         android:title="Timer" />
 
     <item
-        android:id="@+id/Study"
+        android:id="@+id/frmGaku"
         android:icon="@drawable/ic_baseline_bar_chart_24"
         android:title="StudyRecord" />
 
 
     <item
-        android:id="@+id/Calendar"
+        android:id="@+id/frmCal"
         android:icon="@drawable/ic_baseline_calendar_today_24"
         android:title="Calendar" />
 
     <item
-        android:id="@+id/ToDo"
+        android:id="@+id/frmToDo"
         android:icon="@drawable/ic_baseline_check_box_24"
         android:title="ToDo" />
 

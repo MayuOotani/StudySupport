@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -79,7 +80,7 @@ public class StudyRecord_UI extends AppCompatActivity {
         }
 
         //？ボタンを登録、ボタンが押されたときの処理
-        Button hintbutton = (Button) findViewById(R.id.hintbutton);
+        ImageButton hintbutton = (ImageButton) findViewById(R.id.hintbutton);
         hintbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,7 +104,7 @@ public class StudyRecord_UI extends AppCompatActivity {
 
         //他の画面への画面遷移宣言
         BottomNavigationView menu = findViewById(R.id.bnv);
-        menu.getMenu().findItem(R.id.Study).setChecked(true);
+        menu.getMenu().findItem(R.id.frmGaku).setChecked(true);
 
         //他の画面への画面遷移
         menu.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -112,24 +113,24 @@ public class StudyRecord_UI extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()){
-                    case R.id.Main :
+                    case R.id.frmMain :
                         intent = new Intent(StudyRecord_UI.this, MainActivity.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Timer :
+                    case R.id.frmTimer :
                         intent = new Intent(StudyRecord_UI.this, MainTimerFrame.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Study :
+                    case R.id.frmGaku :
                         return true;
-                    case R.id.Calendar :
+                    case R.id.frmCal :
                         intent = new Intent(StudyRecord_UI.this, calendarUI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.ToDo :
+                    case R.id.frmToDo :
                         intent = new Intent(StudyRecord_UI.this, ToDo_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

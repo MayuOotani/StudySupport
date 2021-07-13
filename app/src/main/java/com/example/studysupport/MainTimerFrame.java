@@ -52,7 +52,7 @@ public class MainTimerFrame extends AppCompatActivity {
         NumberPicker min = findViewById(R.id.numberPicker);
         NumberPicker sec = findViewById(R.id.numberPicker2);
         BottomNavigationView menu = findViewById(R.id.bnv);
-        menu.getMenu().findItem(R.id.Timer).setChecked(true);
+        menu.getMenu().findItem(R.id.frmTimer).setChecked(true);
 
 
 
@@ -112,24 +112,24 @@ public class MainTimerFrame extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()){
-                    case R.id.Main :
+                    case R.id.frmMain :
                         intent = new Intent(MainTimerFrame.this, MainActivity.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Timer :
+                    case R.id.frmTimer :
                         return true;
-                    case R.id.Study :
+                    case R.id.frmGaku :
                         intent = new Intent(MainTimerFrame.this, StudyRecord_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.Calendar :
+                    case R.id.frmCal :
                         intent = new Intent(MainTimerFrame.this, calendarUI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         return true;
-                    case R.id.ToDo :
+                    case R.id.frmToDo :
                         intent = new Intent(MainTimerFrame.this, ToDo_UI.class);
                         startActivity(intent);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

@@ -11,18 +11,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="5dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/circle_button"
+            android:background="@null"
             android:onClick="onClickHint"
-            android:text="@string/button_hat"
-            android:textSize="13sp"
-            app:backgroundTint="#FFC107" />
+            app:srcCompat="@drawable/ic_baseline_help_24" />
 
         <CalendarView
             android:id="@+id/Calendar"
